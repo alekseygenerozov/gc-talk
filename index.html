@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style type="text/css">
+        p { text-align: left; 
+        } 
+        .reveal section img { background:none; border:none; box-shadow:none; }
+        li {text-align: left; 
+/*        	font-size: 0.7em !important;*/
+        }
+        .reveal ul {  display: block; text-align: left; margin: 0 0 0 1em;}
+        .reveal h4 {text-align: left;}
+        .reveal h3 {text-align: left;}
+        .reveal h2 {text-align: left;}
+        .reveal h1 {text-align: left;}
+        .reveal div {padding: 10px;}
+        /*.reveal .slides > section > section { text-align:left; }*/
+/*        .reveal .center {text-align: left;}*/
+        .reveal .lcred {
+    	text-align: left;
+    	font-size: 55% !important;
+		}
+		.figb figcaption {position: absolute; bottom: 150px; text-align: left; font-size: 70%;}
+		.figl figcaption {position: absolute; right: 10%; top:150px ; text-align: left; font-size: 60%;}
+		.container{
+	    display: flex;
+	   	margin: 50px;
+
+		}
+		.col{
+	    flex: 1;
+		}
+/*		.video-wrapper {
+ 		 position: relative;
+  		 height: 100%;
+  		 padding-top: 25px;
+  		 width: 100;
+  		 margin: 100;
+		}*/
+
+/*		.video {float: left;
+			height: 100% !important;}*/
+
+		.column {
+	  	width: 50%
+	  	height: 100%;
+	  	clear: bottom;
+	    }
+
+		.row:{
+  		content: "";
+  		display: table;
+  		clear: both;
+		}
+    </style> 
+	</head>
+	<body>
+		<div class="reveal">
+		    <!-- In between the <div="reveal"> and the <div class="slides">-->
+			<!-- ====================== BETWEEN REVEAL AND SLIDES ====================== -->
+<!-- 			<header style="position: absolute; left: 10px;"></header> -->
+<!-- 			<header class="right" style="position: absolute; right: 10px;"></header> -->
+			<!-- ====================== BETWEEN REVEAL AND SLIDES ====================== -->
+			<div class="slides">
+				<section>
+				<h2>The Galactic Center</h2>
+				<img src="figures/keck.jpg" width="1800" align="left">
+				</section>
+
+				<section>
+				<h2>Stellar orbits</h2>
+				<div style="float: left; overflow: hidden;">
+								<video width=1400 muted controls><source data-src="orbits.mp4" type="video/mp4" /></video>
+				</div>
+				</section>
+
+				<section>
+				<h2>Stellar orbits</h2>
+				<div style="float: left">
+								<video width=1200  muted controls><source data-src="figures/ghezGC_comp3-18_H264_864_VP8.webm" type="video/webm"></video>
+				</div>
+				</section>
+
+				<section>
+					<h2>Summary </h2>
+					<ul>
+						<li class=fragment><font size=50>Observations suggest show presence $4\times 10^6 M_{\odot}$ dark mass.
+							</font>
+						<li class=fragment><font size=50>Supermassive Black Hole (SMBH)!</font>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is a Black hole?</h2>
+					<ul>
+						<li class=fragment><font size=50>Black hole is a solution
+							to the Einstein equation.</font>
+						<li class=fragment><font size=50>Has a <i>horizon</i> at the 
+							Schwarzschild radius ($\approx 3.8\times 10^{-7}$ pc in the Galactic Center)</font>
+						<li class=fragment><font size=50>Nothing can escape from this region!</font>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Zooming into the SMBH</h2>
+					<figure>
+					<img src="figures/hot_spot_artist.jpg"  align="left" width="1100">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Olena Shmahalo/Quanta Magazine</figcaption>
+					</figure>
+					<div class=container>
+					<div class=col>
+					<ul> 
+						<li class=fragment>Closest star (S2)
+						is at $\approx$1400 Sch. radii!
+						<li class=fragment>Use gas to zoom in
+					</ul>
+					</div>
+					</div>
+				</li>
+				</li>
+				</li>
+				</section>
+
+				<section>
+					<h2>Interferometry</h2>
+					<figure>
+					<img src="figures/interferometer.png"  align="left" width="800">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">http://www.mro.nmt.edu/</figcaption>
+					</figure>
+					<div class=container>
+					<div class=col>
+					<ul> 
+						<li class=fragment> Sch. radius is only 10 $\mu$as.
+						<li class=fragment> Like penny on moon!
+<!-- 						<li class=fragment> Use interferometry
+ -->					</ul>
+					</div>
+					</div>
+				</li>
+				</li>
+				</li>
+				</section>
+
+
+				<section>
+				<h2>Orbiting gas within a few Sch. radii!</h2>
+				<figure>
+				<img src="figures/hot_spot.png"  align="left" width="800">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Gravity Collaboration, A&A, 618, L10, 2018</figcaption>
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>Centroid position of a flare.
+				</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>Event Horizon Telescope</h2>
+				<figure>
+				<img src="figures/eht.jpg" width="800" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">EHT Collaboration 2019, ApJL, 875, L1 </figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>Radio interferometer size of the World! 
+					<li class=fragment>Will observe Galactic Center
+				</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>Event Horizon Telescope</h2>
+				<figure>
+				<img src="figures/bh_shadow.jpg" width="1200" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">EHT Collaboration</figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>Can capture SMBH Shadow
+					<li class=fragment>Image of M87 on left
+				</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>Some history</h2>
+				<figure>
+				<img src="figures/bh_pred.png" width="1200" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Lynden-Bell&Rees 1971, MNRAS, 152, 461</figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>SMBH in Galactic Center
+						predicted in 1971!!
+				</ul>
+				</div>
+				</div>
+				</section>
+
+
+
+
+				<section>
+				<h2>Stellar density</h2>
+				<figure>
+				<img src="figures/stellar_density.png"  align="left" width="1100">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Schodel et al 2018 A&A, 609, A27</figcaption>
+				</figure>
+
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>Estimates for Stellar Density in the Galactic Center.
+					<li class=fragment>From diffuse light in the Galactic Center
+				</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>Consequences</h2>
+				<ul>
+					<li class=fragment><font size=50>Close encounters between stars</font>
+					<li class=fragment><font size=50>Tidal disruption events (TDEs)</font>
+				</ul>
+				</section>
+
+				<section>
+				<h2>Tidal disruption events</h2>
+				<figure>
+				<img src="figures/loss_cone.svg" width="600" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Merritt 2013  </figcaption>
+				</figure>
+				<div class="container">
+				<div class="col">
+					<ul>
+						<li class=fragment> Star gets too close to SMBH
+						<li class=fragment> Ripped apart!
+					</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>Tidal disruption events</h2>
+				<figure>
+				<img src="figures/rt.jpg" width="1200" align="left">
+				</figure>
+				<div class="container">
+				<div class="col">
+				</div>
+				</div>
+				</section>
+
+
+				<section>
+				<h2>Tidal disruption events</h2>
+				<figure>
+				<img src="figures/tde_sim.png" width="1500" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Rosswog et al 2009, ApJ,  95, 404R </figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				</div>
+				</div>
+				</section>
+				
+				<section>
+				<h2>Tidal disruption events</h2>
+				 <iframe width="1600" height="900" align="left"
+				src="https://www.youtube.com/embed/NbpziwzWTh4">
+				</iframe> 
+				Credit: Clement Bonnerot
+				</section>
+
+				<section>
+				<h2>TDE observations</h2>
+					<li class=fragment><font size=50>One TDE every ten thousand 
+					years in a typical galaxy</font>
+					<li class=fragment><font size=50>Unlikely to see TDE in Galactic Center within a human lifetime</font>
+					<li class=fragment><font size=50>But candidate TDEs have been identified in other Galaxies!</font>
+				</section>
+
+				<section>
+				<h2>TDE Candidates (Optical/UV)</h2>							
+					<figure class=figb>
+					<img src="figures/Lumcomp.svg" width="1000" align="left">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Hung et al 107, ApJ, 842, 29H, 2017 </figcaption>	
+					</figure>
+					<div class="container">
+					<div class="col">
+						<ul>
+							<li class=fragment>Two paradigms
+							<figure>
+							<img src="figures/circ.png">
+							<figcaption style="position:absolute; bottom:170px; font-size: 70%">Shocks [Piran et al 2015, ApJ, 806, 164]
+							</figcaption>
+							</figure>
+							
+						</ul>
+					</div>
+					</div>
+
+				</section>			
+
+
+				<section data-transition="none-in slide-out" data-transition-speed="fast">
+				<h2>TDE Candidates (Optical/UV)</h2>							
+					<figure class=figb>
+					<img src="figures/Lumcomp.svg" width="1000" align="left">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Hung et al 107, ApJ, 842, 29H, 2017 </figcaption>	
+					</figure>
+					<div class="container">
+					<div class="col">
+						<ul>
+							<li class>Two paradigms
+							<figure>
+							<img src="figures/reproc.png">
+							<figcaption style="position:absolute; bottom:170px; font-size: 70%">Reprocessing [Metzger&Stone 2016, MNRAS, 461, 948]
+							</figcaption>
+							</figure>
+							
+						</ul>
+					</div>
+					</div>
+
+				</section>		
+				
+
+				<section>
+				<h2>Jetted TDE Candidates (X--rays/radio)</h2>					
+					<figure>
+					<img src="figures/swift.png" width="1300" align="left">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Berger et al 2012, ApJ, 748, 36B </figcaption>	
+					</figure>
+
+					<DIV style="position: absolute; top:200px; left:150px;"><font color=red>X-ray</font></DIV>
+				 	<DIV style="position: absolute; top:200px; left:600px;"><font color=black>Radio</font></DIV>
+					<div class="container">
+					<div class="col">
+					<ul>
+						<li>Swift J1644
+					</ul>
+					<figure class=fragment>
+						<figure>
+						<img src="figures/swift_1644.jpg">
+						<figcaption style="position:absolute; bottom:380px; font-size: 70%">NASA's Goddard Space Flight Center/Conceptual Image Lab</figcaption>
+						</figure>
+					</figure>
+					</div>
+					</div>
+
+				</section>
+
+
+				<section>
+				<h2>Jetted TDE Candidates (X--rays/radio)</h2>					
+					<figure>
+					<img src="figures/synchrotron.gif" width="1100" align="left">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">http://abyss.uoregon.edu/~js/glossary/synchrotron_radiation.html</figcaption>	
+					</figure>
+
+					<div class="container">
+					<div class="col">
+					</div>
+					</div>
+
+				</section>
+
+				<section>
+				<h2>TDE Applications</h2>
+					<ul>
+						<li class=fragment><font size=50>Natural laboratories for jet physics</font>				
+						<li class=fragment><font size=50>SMBH demographics</font>
+					</ul>	
+				</section>
+
+				<section>
+				<h2>TDE Applications</h2>
+				<h4>Weighing SMBHs</h4>
+					<figure>
+					<img src="figures/mockler.png" width="800" align="left">
+					<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Mockler et al 2019, ApJ, 872, 151 </figcaption>	
+					</figure>
+					<div class="container">
+					<div class="col">
+						<ul>
+							<li class=fragment>Observed TDEs constrain SMBH masses 
+						</ul>
+					</div>
+					</div>
+				</section>
+
+				<section>
+				<h2>Binary disruptions</h2>
+ 					<div class="container">
+ 					<div class="col" style="text-align:left; clear:bottom;">
+						<video align="left" width="1200" muted controls><source data-src="figures/example_disruption.webm" type="video/webm" /></video>
+					</div>
+					</div>
+<!-- 					<div class="container">
+					<div class="col">
+						<ul>
+							<li class=fragment>Binary stars can also be disrupted!
+						</ul>
+					</div>
+					</div> -->
+				</section>
+
+				<section>
+				<h2>Binary disruptions</h2>
+				<img src="figures/hvs.png" width="1000" align="left">
+				<div class="container">
+				<div class="col">
+					<ul>
+						<li class=fragment>Binary disruptions ejects hypervelocity stars
+						<li class=fragment>A few days ago: hypervelocity 
+							star identified originating from the Galactic Center!!
+					</ul>
+				</div>
+				</div>
+				</section>
+								
+
+				<section>
+				<h2>X--ray binaries in the Galactic Center.</h2>
+				<h4>What is an X--ray binary?</h4>
+				<img src="figures/xrb.jpg" width="1000" align="left">
+				<div class="container">
+				<div class="col">
+					<ul>
+						<li class=fragment>Black hole (BH) accretes matter from 
+							star
+						<li class=fragment>Small BHs (~10 times the mass of the sun)
+					</ul>
+				</div>
+				</div>
+				</section>
+
+
+				<section>
+				<h2>X--ray binaries in the Galactic Center.</h2>
+					<img src="figures/xrbs_hailey.png" width="800" align="left">
+					<div class=container>
+					<div class=col>
+					<figure class=figb>
+						<img src="figures/transients.png" width="600" align="left">
+						<figcaption>Muno <i>et al.</i> 2005, ApJ, 622, L113</figcaption>
+					</figure>
+					</div>
+					</div>
+				</section>
+				</section>
+
+
+				<section>
+				<h2>X--ray binaries in the Galactic Center.</h2>
+					<ul>
+						<li>
+							<font size=50>
+							6-12 quiescent BH XRB candidates in the central pc
+							</font>
+						</li>
+						<li> 
+							<font size=50>
+							Likely hundreds below detection threshold
+							</font>
+						</li>
+					</ul>
+				</section>
+
+				<section><h2>Formation</h2>
+					<ul>
+					<li class=fragment>
+						<font size=50>BH XRBs / $\mathrm{M_*}$ $\sim 10^3$ times the rest of the Galaxy </font>
+					</li>
+					<li class=fragment>
+						<font size=50>These sources likely formed dynamically!</font>
+					</li>
+					<li class=fragment>
+						<font size=50>One possible channel is <i>tidal capture</i>.
+						</font>
+					</li>
+					</ul>
+				</section>
+
+				<section>
+				<h2>Basics of tidal capture</h2>
+					<img src="figures/tc1.png" width="1500" align="left">
+				</section>
+				</section>
+
+				<section>
+				<h2>Basics of tidal capture</h2>
+					<img src="figures/tc2.png" width="1500" align="left">
+				</section>
+				</section>
+
+				<section>
+				<h2>Empirically motivated tidal capture rates</h2>
+					<ul>
+						<li class=fragment><font size=50>Massive stars are BH progenitors</font>
+						<li class=fragment><font size=50>BH formation rate$\approx$ # Massive stars/Time since star formation</font>
+						<li class=fragment><font size=50>Estimate rate of close encounters between stars and BHs.
+						</font>
+					</ul>
+				</section>
+
+				<section>
+				<h2>Theory and observations comparison</h2>
+				<figure>
+				<img src="figures/surfaceDensity.svg" width="1500" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Generozov et al 2018 </figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>TC reproduces observed dist of XRB candidates.
+					<li class=fragment>Can star survive capture?
+				</ul>
+				</div>
+				</div>
+				</section>
+
+				<section>
+				<h2>More Galactic Center phenomena</h2>
+				<figure>
+				<img src="figures/ligo.png" width="1000" align="left">
+				<figcaption style="position:absolute; bottom:-10px; font-size: 70%">Miller&Yunes 2019, Nature, 586, 469</figcaption>	
+				</figure>
+				<div class="container">
+				<div class="col">
+				<ul>
+					<li class=fragment>Close encounters between BHs
+					<li class=fragment>Gravitational wave sources
+				</ul>
+				</div>
+				</div>
+				</section>
+
+
+
+
+				
+
+			</div>
+
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				width: 1920,
+				height: 1080,
+				// Factor of the display size that should remain empty around the content
+				margin: 0.03,
+				// Bounds for smallest/largest possible scale to apply to content
+				minScale: 0.2,
+				maxScale: 1.5,
+				history: true,
+				math: {
+					mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				dependencies: [
+				    { src: 'plugin/math/math.js', async: true },
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					// { src: 'plugin/math/math.js', async: true }
+
+				]
+			});
+		</script>
+		<!-- <script src="pdfjs/src/pdf.js"></script> -->
+	</body>
+</html>
